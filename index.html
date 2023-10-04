@@ -5,25 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collectors Center</title>
     <style>
+        /* Reset default margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            background-image: url('library-bg.jpg'); /* Add the path to your background image */
-            background-size: cover; /* Ensure the background image covers the entire viewport */
-            background-repeat: no-repeat; /* Prevent the background image from repeating */
+            background-image: url('library-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
+
         header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
         }
-	
+
         main {
             text-align: center;
+          
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
+
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -32,26 +45,37 @@
             border: none;
             cursor: pointer;
             text-decoration: none;
+            border-radius: 5px;
         }
+
         button:hover {
-            background-color: #FEC794; 
+            background-color: #FEC794;
             color: #40342A;
         }
+
         h1, p {
             color: white;
+            text-align: center; /* Center align text */
         }
-		 img {
-            max-width: 50%; /* Ensure the image does not exceed the width of its container */
-            margin: 20px 0; /* Add some margin above and below the image */
+
+        img {
+            max-width: 75%;
+            margin: 5px 0;
         }
 
         /* Media query for smaller screens */
         @media (max-width: 600px) {
-            body {
-                flex-direction: column; /* Change back to column layout for small screens */
+            img{
+				max-width:60%;
+			}
+
+            main {
+                background-color: transparent;
+                box-shadow: none;
             }
+
             button {
-                margin: 10px 0; /* Add margin between buttons on small screens */
+                margin: 10px 0;
             }
         }
     </style>
@@ -61,7 +85,7 @@
         <h1>Welcome to Collectors Center's App</h1>
     </header>
     <main>
-	 <img src="logo.png" alt="Collectors Center Logo">
+        <img src="logo.png" alt="Collectors Center Logo">
         <p>Click the button below to download the Collectors Center's APK file.</p>
         <a href="app-release.apk" download>
             <button>Download Collectors Center's App</button>
