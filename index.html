@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riesgo Suicida</title>
+    <title>Collectors Center</title>
     <style>
         body {
-            background-color: #e0f2f1; /* Light blue background color */
+            background-image: url('library-bg.png'); /* Add the path to your background image */
+            background-size: cover; /* Ensure the background image covers the entire viewport */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -24,25 +26,37 @@
         button {
             padding: 10px 20px;
             font-size: 16px;
-            background-color: #007bff; /* Blue button color */
-            color: #fff; /* White text color */
+            
+			background-color: #40342A;
+			color: #FEC794;
             border: none;
             cursor: pointer;
             text-decoration: none;
         }
         button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
+          
+			background-color: #FEC794; 
+            color: #40342A;
         }
+		
+		h1,p{
+			color:white;
+		}
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Collection Center's App</h1>
+        <h1 >Welcome to Collectors Center's App</h1>
     </header>
     <main>
-        <p>Click the button below to download the Collection Center's APK file.</p>
+        <p>Click the button below to download the Collectors Center's APK file.</p>
         <a href="app-release.apk" download>
-            <button>Download Collection Center's App</button>
+            <button>Download Collectors Center's App</button>
+        </a>
+        
+        <!-- Add a button to download the user manual -->
+        <a href="user-manual.pdf" download>
+            <button>Download User Manual</button>
         </a>
     </main>
     <footer>
